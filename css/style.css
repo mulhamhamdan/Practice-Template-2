@@ -1,0 +1,258 @@
+
+/* General styles*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(219, 245, 245);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.clear{
+    clear: both;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    background-color: whitesmoke;
+    
+}
+/*header*/
+header{
+   
+    background-color: rgb(153, 181, 241);
+}
+
+h1 , .header-p{
+ float: left;
+ width:50%;
+ 
+}
+h1{
+    text-align: left;
+    padding-left: 10px;
+    font-size: 50px;
+    color:tomato;
+    text-shadow:2px 2px black;
+    
+    
+}
+.header-p{
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 25px;
+}
+.login-a{
+   text-decoration: none;
+   display: inline-block; 
+   width:100px;
+   height: 45px;
+   background-color: tomato;
+   text-align: center;
+   margin: 3px 20px;
+   padding: 3px 5px;
+   color:white;
+   text-shadow:2px 2px black;
+}
+
+/*navigation menu*/
+nav{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    
+    background-color: rgb(76, 81, 82);
+    
+    z-index: 1;
+}
+ nav .logo{
+    float: left;
+    width:30%;
+    padding-left: 30px;
+    padding:9px 30px;
+}
+
+nav ul{
+    float: left;
+    list-style-type: none;
+    width:70%;
+    padding-left: 250px;
+}
+nav li{
+    display: inline-block;
+    
+}
+nav li a{
+    color:white;
+    font-size:18px;
+    text-decoration: none;
+    display: block;/* هنا كل انكور داخل ليست ايتم */
+    padding: 10px 40px;
+    margin:10px 10px 10px 10px;
+    
+}
+nav li a:after{
+    content: "";
+    display: block;
+    width:0%;
+    height: 1px;
+    background-color: rgb(243, 205, 198);
+    transition: 0.3s;
+}
+nav li a:hover::after{
+    width:100%;
+    
+}
+/*home-section*/
+.home-section{
+    height: 63vh;
+    background-image: url(../images/Safita_overview.jpg);
+    background-size: cover;
+    position: relative;
+    margin-top: 20px;
+}
+.Overlay{
+    background-color: rgba(0,0,0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+.Home-Content{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:white;
+}
+.Title{
+    font-size: 30px;
+    letter-spacing: 6px;
+}
+.Home-Desc{
+    letter-spacing: 3px;
+    line-height: 30px;
+    margin: 10px;
+}
+.btn{
+    width: 160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+ .btn-start{
+    margin-right: 10px;
+    background-color: white;
+
+}
+.btn-learn{
+    background-color:#6195ff ;
+    color:white;
+}
+.Hover-opacity{
+    transition: opacity .5s;
+}
+.Hover-opacity:hover{
+    opacity: 0.8; 
+ }
+ /*description*/
+
+ .description{
+     position: relative;
+     height: 100vh;
+ }
+ .desc-content{
+     position: absolute;
+     top:50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+ }
+ .learn-more{
+     text-align: center;
+     font-size: 50px;
+     color:rgb(124, 15, 15);
+ }
+ /*location*/
+ .loc-p{
+     font-size: 18px;
+     letter-spacing: 3px;
+     line-height: 30px;
+     text-align: justify;
+     color:rgb(124, 15, 15);
+     padding: 10px 20px;
+     margin: 0px 20px 20px 20px;
+     font-style: oblique;
+ }
+ .loc-h2{
+    font-size: 30px;
+    letter-spacing: 3px;
+    line-height: 30px;
+    text-align: justify;
+    color:white;
+    padding: 10px 20px;
+    margin: 0px 20px 20px 20px;
+    font-style: oblique;
+    background-color: rgb(76, 81, 82);
+ }
+ article{
+    text-align: center;
+ }
+ .map-api{
+     width: 500px;
+     height: 400px;
+     margin: auto;
+ }
+ /*table*/
+ table {
+    border-collapse: collapse;
+  }
+  
+  table {
+    table-layout: fixed;
+    width: 96%;
+    margin:0px 20px;
+  }
+  
+  table ,td ,th{
+    height: 50px;
+    vertical-align: middle;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  tr:hover {background-color: #f89797;}
+  
+  th {
+    background-color: rgb(76, 81, 82);
+    color: white;
+  }
+  .info-table{
+      margin: 50px 0px;
+  }
+  /*footer*/
+  footer{
+      background-color: rgb(76, 81, 82);
+  }
+  .icons-img{
+      margin: auto;
+      width: 50%;
+      text-align: center;
+  }
+  .icons-img a{
+      display: inline-block;
+      margin: 10px 30px;
+  }
+
+
+
+
+
+
+
+
+

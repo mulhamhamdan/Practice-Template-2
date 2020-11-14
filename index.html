@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Safita
+    </title>
+    <link rel="Stylesheet" href="css/style.css">
+    <script src="jq/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("div").click(function(){
+                alert("Hello world");
+            });
+        });
+    </script>
+</head>
+ <body>
+     
+     <header>
+         <h1>Safita.com</h1>
+         <p class="header-p">the largest web tourisme guide in the world<a href="#" class="login-a">LOG IN</a></p>
+         <div class="clear"></div>
+     </header>
+     <Nav>
+         <div class="logo">
+         <img src="images/logo.jpg" alt="logo" class="logo-img" width="90" height="40" >
+         </div>
+         <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Services</a></li>
+             <li><a href="#">Blog</a></li>
+             <li><a href="#">Contact us</a></li>
+         </ul>
+         <div class="clear"></div>
+     </Nav>
+     <div class="container">
+     <section class="home-section">
+            <div class="Overlay"><!-- محتوى الهوم يجب ان يكون داخل الأوفرلاي وإلا سيطغى الاوفرلاي على كل الهوم -->
+                <div class="Home-Content">
+                    <h2 class="Title"> Welcome to our website </h2>
+                    <p class="Home-Desc">
+                        there is much to see about us and our business you can start your tour ..click here
+                    </p>
+                    <button class="btn btn-start Hover-opacity">Get Started !</button>
+                    <button class="btn btn-learn Hover-opacity">Learn More !</button>
+                </div>
+            </div>
+     </section>
+     <Section class="description">
+         <div class="desc-content">
+             <h2 class="learn-more">see more about safita</h2>
+            <iframe width="650" height="445" src="https://www.youtube.com/embed/5ufC-u3SznQ" style="border:none">
+                </iframe>
+
+         </div>
+     </Section>
+     <section class="location">
+            <h2 class="loc-h2">Location</h2>
+            <P class="loc-p">
+                Safita is a city in the Tartous Governorate,
+                northwestern Syria, located to the southeast of
+                Tartous and to the northwest of Krak des Chevaliers.
+                It is situated on the tops of three hills and the valleys 
+                between them, in the Syrian Coastal Mountain Range
+            </P>
+            
+            <div class="map-api">
+                            <!DOCTYPE html>
+                            <html>
+                            <head>
+                                <title>Simple Map</title>
+                                <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+                                <script
+                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+                                defer
+                                ></script>
+                                <style type="text/css">
+                                /* Always set the map height explicitly to define the size of the div
+                                * element that contains the map. */
+                                #map {
+                                    height: 100%;
+                                }
+
+                                /* Optional: Makes the sample page fill the window. */
+                                html,
+                                body {
+                                    height: 100%;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                                </style>
+                                <script>
+                                "use strict";
+
+                                let map;
+
+                                function initMap() {
+                                    map = new google.maps.Map(document.getElementById("map"), {
+                                    center: {
+                                        lat: 34.8166634,
+                                        lng: 36.11666
+                                    },
+                                    zoom: 9
+                                    });
+                                }
+                                </script>
+                            </head>
+                            <body>
+                                <div id="map"></div>
+                            </body>
+                            </html>
+
+
+            </div>
+           
+     </section>
+     <section class="info-table">
+        
+        <table>
+            
+            <tr>
+                <th>Country</th>
+                <th>Governorate</th>
+                <th>Population (2004)</th>
+                <th>Coordinates</th>
+                <th>Area code(s)</th>
+            </tr>
+            <tr>
+                <td>Syria</td>
+                <td>Tartus</td>
+                <td>20,301</td>
+                <td>34°49′N 36°07′E</td>
+                <td>43</td> 
+            </tr>
+        </table>
+     </section>
+
+    </div><!-- container -->
+    <footer>
+        <div class="icons-img">
+            <a href="#"><img src="images/facebook.png" alt="facebook" width="50" height="50"></a>
+            <a href="#"><img src="images/instagrame.png" alt="instagrame" width="50" height="50"></a>
+            <a href="#"><img src="images/twitter.png" alt="twitter" width="50" height="50"></a>
+            <a href="#"><img src="images/youtube.png" alt="youtube" width="50" height="50"></a>
+        </div>
+    </footer>
+ </body>
+
+
+</html>
